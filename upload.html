@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Upload Crop - Smart Farmer AI</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<div class="card small-form">
+<h1>Upload Crop</h1>
+<form id="uploadForm">
+<label for="cropName">Crop name</label>
+<input id="cropName" type="text" required />
+<p class="hint small">Type crop name (e.g., Tomato). <button class="hint-tts" data-text="Type the name of the crop, for example Tomato.">🔊</button></p> <label for="quantity">Quantity (kg)</label>
+<input id="quantity" type="number" required />
+<p class="hint small">Enter quantity in kilograms. <button class="hint-tts" data-text="Enter how many kilograms you have to sell.">🔊</button></p> <label for="price">Price (₹ per unit)</label>
+<input id="price" type="number" required />
+<p class="hint small">Enter price per kg. <button class="hint-tts" data-text="Enter price per kilogram in rupees.">🔊</button></p> <label for="photo">Crop photo</label>
+<input id="photo" type="file" accept="image/*" required />
+<p class="hint small">Select a clear photo. <button class="hint-tts" data-text="Take a clear photo of the crop and select that file.">🔊</button></p> <label for="location">Location link (Google Maps)</label>
+<input id="location" type="url" placeholder="https://maps.google.com/..." />
+<p class="hint small">Add Google Maps link. <button class="hint-tts" data-text="Add Google Maps link so buyers can find you.">🔊</button></p> <div class="form-actions">
+<button type="submit" id="btnUpload" class="btn">Upload</button>
+<a href="profile.html" class="btn btn-outline">Back</a>
+</div>
+</form>
+<div id="uploadStatus" class="small"></div>
+</div>
+</main> <script src="script.js" type="module"></script>
+</body>
+</html>

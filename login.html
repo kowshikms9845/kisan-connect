@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Login - Smart Farmer AI</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<div class="card small-form">
+<h1>Login</h1>
+<form id="loginForm">
+<label for="loginPhone">Phone number</label>
+<input id="loginPhone" type="tel" placeholder="10-digit phone number. Example: 9876543210" required />
+<p class="hint small">Enter your 10-digit phone number (no +91 needed). <button type="button" class="hint-tts" data-text="Enter your 10 digit phone number. For example, 9876543210.">🔊</button></p> <label for="loginPassword">Password</label>
+<input id="loginPassword" type="password" placeholder="Your password" required />
+<p class="hint small">Enter the password you chose during registration. <button type="button" class="hint-tts" data-text="Enter your password. If you forgot, tap forgot password link below.">🔊</button></p> <div class="form-actions">
+<button id="btnLogin" type="button" class="btn">Login</button>
+<a href="index.html" class="btn btn-outline">Cancel</a>
+</div>
+</form>
+<p class="small"><a id="forgotPwd" href="#">Forgot password?</a></p>
+<div class="step-guidance">
+<h2>Login guidance</h2>
+<ol>
+<li>Enter the phone number you registered with.</li>
+<li>Type your password carefully.</li>
+<li>Press the Login button.</li>
+<li>If you need a new account, click <a href="register.html">Register</a>.</li>
+</ol>
+</div>
+<p class="small">New here? <a href="register.html">Create a new account</a></p>
+</div>
+</main> <script src="script.js" type="module"></script>
+</body>
+</html>

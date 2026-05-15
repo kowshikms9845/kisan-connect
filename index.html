@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Smart Farmer AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hero">
+<div class="hero-inner">
+<div class="hero-content">
+<div class="hero-text">
+<h1 id="title">Smart Farmer AI</h1>
+<p id="subtitle">Agriculture is the backbone of India.</p>
+<div class="actions">
+<a class="btn" href="login.html">Login</a>
+<a class="btn btn-outline" href="register.html">Register</a>
+</div>
+<div class="lang-wrap">
+<label for="langSelect">Language:</label>
+<select id="langSelect">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+<option value="kn">ಕನ್ನಡ</option>
+</select>
+<button id="btn-tts" class="small">🔊 Listen</button>
+</div>
+</div>
+<div class="hero-illustration">
+<img src="assets/hero-farm.svg" alt="Farm illustration" class="hero-img" />
+</div>
+</div>
+</div>
+</header> <main class="container">
+<section id="guidance" class="card">
+<h2 id="guide-title">Quick guidance</h2>
+<p id="guide-text">Register as a farmer to upload crops; buyers browse and contact farmers directly.</p>
+<button id="btn-start-tour" class="btn-outline small">Start Guided Tour</button>
+</section> <section id="preview" class="card">
+<h2 id="market-title">Marketplace</h2>
+<div id="market-grid" class="grid"></div>
+</section>
+</main> <script src="script.js" type="module"></script>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+register.html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Register - Smart Farmer AI</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<div class="card small-form">
+<h1 id="reg-title">Register</h1>
+<form id="registerForm">
+<label for="role">I am a</label>
+<select id="role" required><option value="farmer">Farmer</option><option value="buyer">Buyer</option></select>
+<p class="hint small">Select if you are a farmer or buyer. <button type="button" class="hint-tts" data-text="Select your role: Farmer or Buyer.">🔊</button></p>
+<label for="name">Full name</label>
+<input id="name" type="text" placeholder="Your full name" required />
+<p class="hint small">Enter your full name (no special characters). <button type="button" class="hint-tts" data-text="Enter your full name. This helps buyers contact you.">🔊</button></p> <label for="phone">Contact number</label>
+<input id="phone" type="tel" placeholder="10-digit phone number. Example: 9876543210" required />
+<p class="hint small">Enter your 10-digit phone number only (no +91 needed). <button type="button" class="hint-tts" data-text="Enter your 10 digit phone number. For example, 9876543210. Buyers will call this number.">🔊</button></p> <label for="locationName">Location name</label>
+<input id="locationName" type="text" placeholder="Village, farm or city name" />
+<p class="hint small">Enter your village, farm, or city name (optional). <button type="button" class="hint-tts" data-text="Enter your village, farm or city name. This helps buyers find you.">🔊</button></p> <label for="password">Password</label>
+<input id="password" type="password" placeholder="Choose a strong password" required />
+<p class="hint small">Choose a password with numbers and letters. <button type="button" class="hint-tts" data-text="Choose a password you can remember. Use numbers and letters. You can reset it later if you forget.">🔊</button></p> <label for="prefLang">Preferred language</label>
+<select id="prefLang"><option value="en">English</option><option value="hi">हिन्दी</option><option value="kn">ಕನ್ನಡ</option></select> <div class="form-actions">
+<button id="btnRegister" type="button" class="btn">Create account</button>
+<a href="index.html" class="btn btn-outline">Back</a>
+</div>
+<p class="small" style="margin-top:12px;">Already registered? <a href="login.html">Login here</a> instead of creating a new account.</p>
+</form>
+<div class="step-guidance">
+<h2>Register guidance</h2>
+<ol>
+<li>Select your role: Farmer or Buyer.</li>
+<li>Fill name and phone number.</li>
+<li>Add your location name and choose a password.</li>
+<li>Click Create account to save your profile.</li>
+</ol>
+</div>
+<p class="small">Already have an account? <a href="login.html">Login</a></p>
+</div>
+</main> <script src="script.js" type="module"></script>
+</body>
+</html>
